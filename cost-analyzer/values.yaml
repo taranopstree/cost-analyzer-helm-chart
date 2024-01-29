@@ -689,7 +689,7 @@ extraVolumeMounts: []
 persistentVolume:
   size: 32Gi
   dbSize: 32.0Gi
-  enabled: true  # Note that setting this to false means configurations will be wiped out on pod restart.
+  enabled: false  # Note that setting this to false means configurations will be wiped out on pod restart.
   # storageClass: "-" #
   # existingClaim: kubecost-cost-analyzer # a claim in the same namespace as kubecost
   labels: {}
@@ -1292,7 +1292,7 @@ prometheus:
       ## If true, alertmanager will create/use a Persistent Volume Claim
       ## If false, use emptyDir
       ##
-      enabled: true
+      enabled: false
 
       ## alertmanager data Persistent Volume access modes
       ## Must match those of existing PV or dynamic provisioner
@@ -1784,7 +1784,7 @@ prometheus:
       ## If true, pushgateway will create/use a Persistent Volume Claim
       ## If false, use emptyDir
       ##
-      enabled: true
+      enabled: false
 
       ## pushgateway data Persistent Volume access modes
       ## Must match those of existing PV or dynamic provisioner
