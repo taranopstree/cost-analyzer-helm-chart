@@ -1,6 +1,6 @@
 global:
   prometheus:
-    enabled: false
+    enabled: true
   grafana:
     enabled: false
 
