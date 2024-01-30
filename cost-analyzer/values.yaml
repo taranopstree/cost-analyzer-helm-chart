@@ -1,4 +1,8 @@
 global:
+  prometheus:
+    enabled: false
+  grafana:
+    enabled: false
 
 cost-analyzer:
   persistentVolume:
@@ -22,11 +26,6 @@ cost-analyzer:
   nodeSelector: {}
   tolerations: []
   affinity: {}
-
-  prometheus:
-    enabled: false
-  grafana:
-    enabled: false
 
   serviceAccount:
     create: true
